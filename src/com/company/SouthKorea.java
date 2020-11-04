@@ -24,6 +24,9 @@ public class SouthKorea {
         }
     }
 
+    /**
+     * Values derived from the CIA World Factbook 2020.
+     */
     static void ManPower() {
         System.out.println("--------------------------------------" + "\n--------------------------------------");
         System.out.println("\t\t  # Man power #");
@@ -36,6 +39,12 @@ public class SouthKorea {
         System.out.println("\t> Total Population: " + totalPopulation + "\n\t> Available Manpower: " + availableManpower + "\n\t> Fit for Service: " + fitForService
                 + "\n\t> Total Military Power: " + totalMilitaryPower + "\n\t> Active Personnel: " + activePersonnel + "\n\t> Reserve Personnel: " + reservePersonnel);
     }
+
+    /**
+     * 'Tanks' value includes Main Battle Tanks, light tanks, and tank destroyers.
+     * 'Armored Vehicles' value includes APCs, IFVs, MRAPs, and Armored Cars.
+     * 'Rocket Projectors include only self-propelled forms.
+     */
     static void LandForces() {
         System.out.println("--------------------------------------" + "\n--------------------------------------");
         System.out.println("\t\t  # Land Forces #");
@@ -48,6 +57,14 @@ public class SouthKorea {
                 + "\n\t> Towed Artillery: " + towedArtillery + "\n\t> Rocket Projectors: " + rocketProjectors);
     }
 
+
+    /**
+     * Total Aircraft Strength value includes both fixed-wing and rotorcraft platforms from all branches of service.
+     * UAVs are not included in the total.
+     * 'Attack' value constitutes attack types.
+     * 'Transports' value includes only fixed-wing aircraft while all rotorcraft are represented under the 'Helicopters' value.
+     * 'Special-Mission' value does not take aerial tankers into account.
+     */
     static void AirPower() {
         System.out.println("--------------------------------------" + "\n--------------------------------------");
         System.out.println("\t\t  # Air Power #");
@@ -71,14 +88,14 @@ public class SouthKorea {
     static void NavalPower(){
         System.out.println("--------------------------------------" + "\n--------------------------------------");
         System.out.println("\t\t  # Air Power #");
-        int totalAssets = xxx;
-        int airCraftCarriers = x;
-        int destroyers = xxx;
-        int frigates = xx;
-        int corvettes = xx;
-        int submarines = xx;
-        int patrol = xx;
-        int mineWarfare = xx;
+        int totalAssets = 234;
+        int airCraftCarriers = 2;
+        int destroyers = 12;
+        int frigates = 18;
+        int corvettes = 12;
+        int submarines = 22;
+        int patrol = 111;
+        int mineWarfare = 11;
         System.out.println("\t> Total Assets: " + totalAssets + "\n\t> Air Craft Carriers: " + airCraftCarriers + "\n\t> Destroyers: " + destroyers
                 + "\n\t> Frigates: " + frigates + "\n\t> Corvettes: " + corvettes + "\n\t> Submarines: " + submarines
                 + "\n\t> Patrol: " + patrol + "\n\t> Mine Warfare: " + mineWarfare);
