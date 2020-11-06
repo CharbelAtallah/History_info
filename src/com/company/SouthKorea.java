@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class SouthKorea {
     static void GlobalPowerIndex(){
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tSouth Korea" + "\n--------------------------------------");
         System.out.println("\t\t  # Power Index #");
         String input = JOptionPane.showInputDialog("Guess South Korea:s ranking Power index from 1-10?" +
                 "\n1 being the top ranked and 10 is the lowest.");
@@ -28,7 +28,7 @@ public class SouthKorea {
      * Values derived from the CIA World Factbook 2020.
      */
     static void ManPower() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tSouth Korea" + "\n--------------------------------------");
         System.out.println("\t\t  # Man power #");
         int totalPopulation = 51_418_097;
         int availableManpower = 25_709_049;
@@ -36,8 +36,8 @@ public class SouthKorea {
         int totalMilitaryPower = 3_680_000;
         int activePersonnel = 580_000;
         int reservePersonnel = 3_100_000;
-        System.out.println("\t> Total Population: " + totalPopulation + "\n\t> Available Manpower: " + availableManpower + "\n\t> Fit for Service: " + fitForService
-                + "\n\t> Total Military Power: " + totalMilitaryPower + "\n\t> Active Personnel: " + activePersonnel + "\n\t> Reserve Personnel: " + reservePersonnel);
+        System.out.printf("\n\t> Total Population: %,d \n\t> Available Manpower %,d \n\t> Fit for Service: %,d \n\t> Total Military Power: %,d \n\t> Active Personnel: %,d \n\t> Reserve Personnel: %,d" ,
+                totalPopulation,availableManpower,fitForService,totalMilitaryPower,activePersonnel,reservePersonnel);
     }
 
     /**
@@ -46,15 +46,15 @@ public class SouthKorea {
      * 'Rocket Projectors include only self-propelled forms.
      */
     static void LandForces() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tSouth Korea" + "\n--------------------------------------");
         System.out.println("\t\t  # Land Forces #");
         int tanks = 2_614;
         int armoredVehicles = 14_000;
         int selfPropelledArtillery = 3_040;
         int towedArtillery = 3_854;
         int rocketProjectors = 575;
-        System.out.println("\t> Tanks: " + tanks + "\n\t> Armored Vehicle: " + armoredVehicles + "\n\t> Self Propelled ARtillery: " + selfPropelledArtillery
-                + "\n\t> Towed Artillery: " + towedArtillery + "\n\t> Rocket Projectors: " + rocketProjectors);
+        System.out.printf( "\n\t> Tanks: %,d \n\t> Armored Vehicle: %,d \n\t> Self Propelled Artillery: %,d \n\t> Towed Artillery: %,d \n\t> Rocket Projectors: %,d" ,
+                tanks,armoredVehicles,selfPropelledArtillery,towedArtillery,rocketProjectors);
     }
 
 
@@ -66,7 +66,7 @@ public class SouthKorea {
      * 'Special-Mission' value does not take aerial tankers into account.
      */
     static void AirPower() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tSouth Korea" + "\n--------------------------------------");
         System.out.println("\t\t  # Air Power #");
         int totalStrength = 1_649;
         int fighters = 414;
@@ -76,9 +76,8 @@ public class SouthKorea {
         int specialMission = 30;
         int helicopters = 803;
         int attackHelicopters = 112;
-        System.out.println("\t> Total Strength: " + totalStrength + "\n\t> Fighters: " + fighters + "\n\t> Dedicated Attackers: " + dedicatedAttack
-                + "\n\t> Transport: " + transport + "\n\t> Trainers: " + trainers + "\n\t> Special Mission: " + specialMission
-                + "\n\t> Helicopters: " + helicopters + "\n\t> Attack Helicopters: " + attackHelicopters);
+        System.out.printf("\n\t> Total Strength: %,d \n\t> Fighters: %,d \n\t> Dedicated Attackers: %,d \n\t> Transport: %,d \n\t> Trainers: %,d \n\t> Special Mission: %,d \n\t> Helicopters: %,d \n\t> Attack Helicopters: %,d" ,
+                totalStrength, fighters, dedicatedAttack, transport, trainers, specialMission, helicopters, attackHelicopters);
     }
     /**
      * 'Total Assets' value includes all possible/available vessels including auxiliaries.
@@ -86,8 +85,8 @@ public class SouthKorea {
      * 'Submarines' value includes diesel-electric and nuclear-powered types.
      */
     static void NavalPower(){
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
-        System.out.println("\t\t  # Air Power #");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tSouth Korea" + "\n--------------------------------------");
+        System.out.println("\t\t  # Naval Power #");
         int totalAssets = 234;
         int airCraftCarriers = 2;
         int destroyers = 12;
@@ -96,9 +95,8 @@ public class SouthKorea {
         int submarines = 22;
         int patrol = 111;
         int mineWarfare = 11;
-        System.out.println("\t> Total Assets: " + totalAssets + "\n\t> Air Craft Carriers: " + airCraftCarriers + "\n\t> Destroyers: " + destroyers
-                + "\n\t> Frigates: " + frigates + "\n\t> Corvettes: " + corvettes + "\n\t> Submarines: " + submarines
-                + "\n\t> Patrol: " + patrol + "\n\t> Mine Warfare: " + mineWarfare);
+        System.out.printf("\n\t> Total Assets: %,d \n\t> Air Craft Carriers: %,d \n\t> Destroyers: %,d \n\t> Frigates: %,d \n\t> Corvettes: %,d \n\t> Submarines: %,d \n\t> Mine Warfare: %,d",
+                totalAssets , airCraftCarriers , destroyers , frigates , corvettes , submarines , patrol , mineWarfare);
     }
 
 

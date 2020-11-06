@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class France {
     static void GlobalPowerIndex() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tFrance" + "\n--------------------------------------");
         System.out.println("\t\t  # Power Index #");
         String input = JOptionPane.showInputDialog("Guess France:s ranking Power index from 1-10?" +
                 "\n1 being the top ranked and 10 is the lowest.");
@@ -27,7 +27,7 @@ public class France {
      * Values derived from the CIA World Factbook 2020.
      */
     static void ManPower() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tFrance" + "\n--------------------------------------");
         System.out.println("\t\t  # Man power #");
         int totalPopulation = 67_364_357;
         int availableManpower = 30_111_868;
@@ -35,8 +35,8 @@ public class France {
         int totalMilitaryPower = 451_635;
         int activePersonnel = 268_000;
         int reservePersonnel = 183_635;
-        System.out.println("\t> Total Population: " + totalPopulation + "\n\t> Available Manpower: " + availableManpower + "\n\t> Fit for Service: " + fitForService
-                + "\n\t> Total Military Power: " + totalMilitaryPower + "\n\t> Active Personnel: " + activePersonnel + "\n\t> Reserve Personnel: " + reservePersonnel);
+        System.out.printf("\n\t> Total Population: %,d \n\t> Available Manpower %,d \n\t> Fit for Service: %,d \n\t> Total Military Power: %,d \n\t> Active Personnel: %,d \n\t> Reserve Personnel: %,d" ,
+                totalPopulation,availableManpower,fitForService,totalMilitaryPower,activePersonnel,reservePersonnel);
     }
 
     /**
@@ -45,15 +45,15 @@ public class France {
      * 'Rocket Projectors include only self-propelled forms.
      */
     static void LandForces() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tFrance" + "\n--------------------------------------");
         System.out.println("\t\t  # Land Forces #");
         int tanks = 528;
         int armoredVehicles = 6_028;
         int selfPropelledArtillery = 109;
         int towedArtillery = 12;
         int rocketProjectors = 13;
-        System.out.println("\t> Tanks: " + tanks + "\n\t> Armored Vehicle: " + armoredVehicles + "\n\t> Self Propelled ARtillery: " + selfPropelledArtillery
-                + "\n\t> Towed Artillery: " + towedArtillery + "\n\t> Rocket Projectors: " + rocketProjectors);
+        System.out.printf( "\n\t> Tanks: %,d \n\t> Armored Vehicle: %,d \n\t> Self Propelled Artillery: %,d \n\t> Towed Artillery: %,d \n\t> Rocket Projectors: %,d" ,
+                tanks,armoredVehicles,selfPropelledArtillery,towedArtillery,rocketProjectors);
     }
 
     /**
@@ -64,7 +64,7 @@ public class France {
      * 'Special-Mission' value does not take aerial tankers into account.
      */
     static void AirPower() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tFrance" + "\n--------------------------------------");
         System.out.println("\t\t  # Air Power #");
         int totalStrength = 1_229;
         int fighters = 269;
@@ -74,9 +74,8 @@ public class France {
         int specialMission = 45;
         int helicopters = 589;
         int attackHelicopters = 62;
-        System.out.println("\t> Total Strength: " + totalStrength + "\n\t> Fighters: " + fighters + "\n\t> Dedicated Attackers: " + dedicatedAttack
-                + "\n\t> Transport: " + transport + "\n\t> Trainers: " + trainers + "\n\t> Special Mission: " + specialMission
-                + "\n\t> Helicopters: " + helicopters + "\n\t> Attack Helicopters: " + attackHelicopters);
+        System.out.printf("\n\t> Total Strength: %,d \n\t> Fighters: %,d \n\t> Dedicated Attackers: %,d \n\t> Transport: %,d \n\t> Trainers: %,d \n\t> Special Mission: %,d \n\t> Helicopters: %,d \n\t> Attack Helicopters: %,d" ,
+                totalStrength, fighters, dedicatedAttack, transport, trainers, specialMission, helicopters, attackHelicopters);
     }
 
     /**
@@ -85,8 +84,8 @@ public class France {
      * 'Submarines' value includes diesel-electric and nuclear-powered types.
      */
     static void NavalPower() {
-        System.out.println("--------------------------------------" + "\n--------------------------------------");
-        System.out.println("\t\t  # Air Power #");
+        System.out.println("\n--------------------------------------" + "\n\t\t\t\tFrance" + "\n--------------------------------------");
+        System.out.println("\t\t  # Naval Power #");
         int totalAssets = 180;
         int airCraftCarriers = 4;
         int destroyers = 11;
@@ -95,8 +94,7 @@ public class France {
         int submarines = 9;
         int patrol = 17;
         int mineWarfare = 17;
-        System.out.println("\t> Total Assets: " + totalAssets + "\n\t> Air Craft Carriers: " + airCraftCarriers + "\n\t> Destroyers: " + destroyers
-                + "\n\t> Frigates: " + frigates + "\n\t> Corvettes: " + corvettes + "\n\t> Submarines: " + submarines
-                + "\n\t> Patrol: " + patrol + "\n\t> Mine Warfare: " + mineWarfare);
+        System.out.printf("\n\t> Total Assets: %,d \n\t> Air Craft Carriers: %,d \n\t> Destroyers: %,d \n\t> Frigates: %,d \n\t> Corvettes: %,d \n\t> Submarines: %,d \n\t> Mine Warfare: %,d",
+                totalAssets , airCraftCarriers , destroyers , frigates , corvettes , submarines , patrol , mineWarfare);
     }
 }
